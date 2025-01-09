@@ -1,7 +1,7 @@
-import requests
 
 from typing import List
 from termcolor import colored
+from security import safe_requests
 
 def search_for_stock_videos(query: str, api_key: str, it: int, min_dur: int) -> List[str]:
     """
@@ -24,7 +24,7 @@ def search_for_stock_videos(query: str, api_key: str, it: int, min_dur: int) -> 
     qurl = f"https://api.pexels.com/videos/search?query={query}&per_page={it}"
 
     # Send the request
-    r = requests.get(qurl, headers=headers, timeout=60)
+    r = safe_requests.get(qurl, headers=headers, timeout=60)
 
     # Parse the response
     response = r.json()
