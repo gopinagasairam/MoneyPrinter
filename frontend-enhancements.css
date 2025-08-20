@@ -1,0 +1,194 @@
+/* 
+ * Progress Enhancement for MoneyPrinter Frontend
+ * Add this CSS to Frontend/index.html <style> section
+ */
+
+.progress-container {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+.progress-bar {
+    height: 8px;
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.step {
+    color: #6b7280;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.step.active {
+    color: #1d4ed8;
+    background: #dbeafe;
+    border-color: #3b82f6;
+}
+
+.step.completed {
+    color: #10b981;
+    background: #d1fae5;
+    border-color: #10b981;
+}
+
+/* Error and success messages */
+.message {
+    padding: 12px;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-weight: 500;
+    display: none;
+}
+
+.message.success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+}
+
+.message.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+}
+
+.message.warning {
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #f59e0b;
+}
+
+/* Enhanced button states */
+.btn-generating {
+    background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Video format selector */
+.format-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.format-option {
+    padding: 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.format-option:hover {
+    border-color: #3b82f6;
+    background: #f8fafc;
+}
+
+.format-option.selected {
+    border-color: #3b82f6;
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.format-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.format-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.format-desc {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Preview modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal video {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.modal-buttons button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #3b82f6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.btn-secondary:hover {
+    background: #e5e7eb;
+}
