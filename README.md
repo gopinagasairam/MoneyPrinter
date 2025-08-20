@@ -1,4 +1,4 @@
-# MoneyPrinter 💸
+# AutoShorts 🎬
 
 Automate the creation of YouTube Shorts locally, simply by providing a video topic to talk about.
 
@@ -9,8 +9,8 @@ Automate the creation of YouTube Shorts locally, simply by providing a video top
 ## Installation 📥
 
 ```bash
-git clone https://github.com/FujiwaraChoki/MoneyPrinter.git
-cd MoneyPrinter
+git clone https://github.com/FujiwaraChoki/AutoShorts.git
+cd AutoShorts
 
 # Install requirements
 pip install -r requirements.txt
@@ -46,7 +46,7 @@ Add your fonts to the `fonts/` folder, and load them by specifying the font name
 
 ## Automatic YouTube Uploading 🎥
  
-MoneyPrinter now includes functionality to automatically upload generated videos to YouTube.
+AutoShorts now includes functionality to automatically upload generated videos to YouTube.
 
 To use this feature, you need to:
 1. Create a project inside your Google Cloud Platform -> [GCP](https://console.cloud.google.com/). 
@@ -71,7 +71,7 @@ For videos that have been locked as private due to upload via an unverified API 
 
 ## Donate 🎁
 
-If you like and enjoy `MoneyPrinter`, and would like to donate, you can do that by clicking on the button on the right hand side of the repository. ❤️
+If you like and enjoy `AutoShorts`, and would like to donate, you can do that by clicking on the button on the right hand side of the repository. ❤️
 You will have your name (and/or logo) added to this repository as a supporter as a sign of appreciation.
 
 ## Contributing 🤝
@@ -80,7 +80,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Star History 🌟
 
-[![Star History Chart](https://api.star-history.com/svg?repos=FujiwaraChoki/MoneyPrinter&type=Date)](https://star-history.com/#FujiwaraChoki/MoneyPrinter&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=FujiwaraChoki/AutoShorts&type=Date)](https://star-history.com/#FujiwaraChoki/AutoShorts&Date)
 
 ## License 📝
 
